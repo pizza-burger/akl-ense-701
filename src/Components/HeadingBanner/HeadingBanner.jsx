@@ -6,6 +6,7 @@ const HeadingBanner = (props) => {
     const [bgIn, setBgIn] = useState(false);
     const [headingIn, setHeadingin] = useState(false);
     const [lowerTextIn, setLowerTextIn] = useState(false);
+    const [searchTextIn, setSearchTextIn] = useState(false);
 
     const [useInit, setUseInit] = useState(true);
     //use effect chain to let element come in one by one
@@ -23,6 +24,10 @@ const HeadingBanner = (props) => {
             setTimeout(() => {
                 setLowerTextIn(true)
             }, 1000);
+
+            setTimeout(() => {
+                setSearchTextIn(true)
+            }, 1200);
             setUseInit(false);
         }
     })
@@ -38,9 +43,9 @@ const HeadingBanner = (props) => {
         {/* negative zIndex makes it go to the back */}
         <Grid style={{ zIndex: "-99", overflow: "hidden", position: "absolute", left: "0", top: "-5vh" }} container spacing={0}>
             <Grow in={bgIn}>
-                <Grid item xs={12} style={{ padding: "0px", maxHeight: "80vh", overflow: "hidden" }}>
+                <Grid item xs={12} style={{ padding: "0px", maxHeight: "100vh", overflow: "hidden" }}>
                     {/* using heading image  */}
-                    <img style={{ maxWidth: "100%", minHeight: "80vh", bottom: "0" }} src={headingBg} />
+                    <img style={{ maxWidth: "130%", minHeight: "100vh", bottom: "0" }} src={headingBg} />
                 </Grid>
             </Grow>
 
@@ -61,6 +66,12 @@ const HeadingBanner = (props) => {
 
                     <Grow in={lowerTextIn}>
                         <Typography variant="h6" style={{ color: "#FFF" }}>Developed by Nick, Student Id: 17970654</Typography>
+                    </Grow>
+
+
+
+                    <Grow in={searchTextIn}>
+                        <Typography variant="h6" style={{ color: "#FFF", marginTop: "5vh" }}>Every search must has a begining, Why not start it here</Typography>
                     </Grow>
 
                 </Grid>
