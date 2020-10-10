@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import { Typography, Grid, TextField } from "@material-ui/core";
 import HeadingBanner from "./Components/HeadingBanner/HeadingBanner.jsx"
 import Navbar from "./Components/Navbar/Navbar.jsx";
@@ -10,7 +10,7 @@ const App = (props) => {
     setCounter(state.length);
   }, [state]);
   return (
-    <>
+    <Fragment style={{overflowX:"hidden"}}>
       <Navbar title="Searcher"/>
 
       <HeadingBanner />
@@ -51,7 +51,7 @@ const App = (props) => {
           </Grid>
         </Grid>
       </Grid> */}
-    </>
+    </Fragment>
   );
 };
 
