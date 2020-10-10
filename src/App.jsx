@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Typography, Grid, TextField } from "@material-ui/core";
-import HeadingBanner from "./Components/HeadingBanner.jsx"
+import HeadingBanner from "./Components/HeadingBanner/HeadingBanner.jsx"
+import Navbar from "./Components/Navbar/Navbar.jsx";
 
 const App = (props) => {
   const [state, setState] = useState("");
@@ -10,8 +11,11 @@ const App = (props) => {
   }, [state]);
   return (
     <>
-    <HeadingBanner/>
-      <Grid container spacing={2}>
+      <Navbar title="Searcher"/>
+
+      <HeadingBanner />
+
+      {/* <Grid container spacing={2}>
         <Grid item xs></Grid>
         <Grid
           item
@@ -45,7 +49,7 @@ const App = (props) => {
             </Grid>
           </Grid>
         </Grid>
-      </Grid>
+      </Grid> */}
     </>
   );
 };
