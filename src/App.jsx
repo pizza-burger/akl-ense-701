@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Typography, Grid, TextField } from "@material-ui/core";
 import HeadingBanner from "./Components/HeadingBanner/HeadingBanner.jsx"
 import Navbar from "./Components/Navbar/Navbar.jsx";
-
+import SearcherRoot from "./Components/SearcherContainer/SearchRoot.jsx"
 const App = (props) => {
   const [state, setState] = useState("");
   const [counter, setCounter] = useState(0);
@@ -15,6 +15,7 @@ const App = (props) => {
 
       <HeadingBanner />
 
+      <SearcherRoot />
       {/* <Grid container spacing={2}>
         <Grid item xs></Grid>
         <Grid
