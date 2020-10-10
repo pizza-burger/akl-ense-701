@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Typography, Grid, TextField } from "@material-ui/core";
+import HeadingBanner from "./Components/HeadingBanner.jsx"
+
 const App = (props) => {
   const [state, setState] = useState("");
   const [counter, setCounter] = useState(0);
@@ -8,6 +10,7 @@ const App = (props) => {
   }, [state]);
   return (
     <>
+    <HeadingBanner/>
       <Grid container spacing={2}>
         <Grid item xs></Grid>
         <Grid
