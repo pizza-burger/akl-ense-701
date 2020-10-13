@@ -11,7 +11,7 @@ const App = (props) => {
   }, [state]);
   return (
     <Fragment style={{overflowX:"hidden"}}>
-      <Navbar title="SEER Search Engine"/>
+      <Navbar title="Searcher"/>
 
       <HeadingBanner />
 

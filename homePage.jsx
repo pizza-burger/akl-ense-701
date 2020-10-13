@@ -39,6 +39,7 @@ export default function homePage() {
   );
 }
 
+//Please add the link to search page.
 function Searcher() {
   return (
     <div>
@@ -46,7 +47,7 @@ function Searcher() {
     </div>
   );
 }
-
+//Please add link to submitter page.
 function Submitter() {
   return (
     <div>
@@ -54,7 +55,7 @@ function Submitter() {
     </div>
   );
 }
-
+//Please add linkto moderator page.
 function Moderator() {
   return (
     <div>
