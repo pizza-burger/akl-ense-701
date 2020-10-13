@@ -5,11 +5,12 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import SubmitStudy from "/pages/SubmitStudy.js";
+import SubmitStudy from "./pages/SubmitStudy.js";
 
-export default function homePage() {
+function homePage() {
   return (
     <Router>
+      <div>Hello!</div>
       <div>
         <ul>
           <li>
@@ -40,6 +41,8 @@ export default function homePage() {
   );
 }
 
+export default homePage;
+
 //Please add the link to search page.
 function Searcher() {
   return (
@@ -49,11 +52,7 @@ function Searcher() {
   );
 }
 //Please add link to submitter page.
-function SubmitStudy() {
-  return (
-    <SubmitStudy />
-  );
-}
+
 //Please add linkto moderator page.
 function Moderator() {
   return (
