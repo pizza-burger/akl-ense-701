@@ -5,6 +5,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import SubmitStudy from "/pages/SubmitStudy.js";
 
 export default function homePage() {
   return (
@@ -15,7 +16,7 @@ export default function homePage() {
             <Link to="/">Searcher</Link>
           </li>
           <li>
-            <Link to="/about">Submitter</Link>
+            <Link to="/submit">Submit</Link>
           </li>
           <li>
             <Link to="/dashboard">Moderator</Link>
@@ -27,8 +28,8 @@ export default function homePage() {
           <Route exact path="/">
             <Searcher />
           </Route>
-          <Route path="/Submitter">
-            <Submitter />
+          <Route path="/submit">
+            <SubmitStudy />
           </Route>
           <Route path="/Moderator">
             <Moderator />
@@ -48,11 +49,9 @@ function Searcher() {
   );
 }
 //Please add link to submitter page.
-function Submitter() {
+function SubmitStudy() {
   return (
-    <div>
-      <h2>Submitter</h2>
-    </div>
+    <SubmitStudy />
   );
 }
 //Please add linkto moderator page.
