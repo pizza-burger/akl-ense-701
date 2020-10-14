@@ -14,8 +14,10 @@ class Searcher extends React.Component {
           to
           <label for="Edate"> End Date: </label>
           <input type="date" id="Edate" name="Edate"></input><br />
-        </form>
+        </form><br />
+        <button type="Search">Search</button>
       </div>
+      
     );
   }
 };

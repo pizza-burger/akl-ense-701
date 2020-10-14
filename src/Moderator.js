@@ -4,7 +4,7 @@ class Moderator extends React.Component {
   render() {
     return (
       <div className="Moderator">
-        <h1>Submit new Study</h1>
+        <h1>Moderator</h1>
         <form>
         
           <label for="title">Title:</label>
@@ -37,7 +37,7 @@ class Moderator extends React.Component {
               <li><a href="#">case3</a></li>
             </ul>
           </div><br />
-          <button type="conform">conform</button>
+          <button type="confirm">Confirm</button>
         </form>
       </div>
     );

@@ -11,6 +11,7 @@ class SubmitStudy extends React.Component {
           <label for="author">Author: </label><br />
           <input type="text" id="author" name="author"></input>
         </form>
+        <button type="submit">Submit</button>
       </div>
     );
   }

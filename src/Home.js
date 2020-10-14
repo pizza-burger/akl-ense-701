@@ -12,7 +12,7 @@ import Searcher from "./Searcher.js";
 function Home() {
   return (
     <Router>
-      <div>Hello!</div>
+      <h1>SEER MENU</h1>
       <div>
         <ul>
           <li>
