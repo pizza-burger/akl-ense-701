@@ -18,7 +18,7 @@ const SearchForm = (props) => {
 
         <Grid item xs={4}>
             <TextField
-                label="From date"
+                label="moderfied"
                 variant="outlined"
                 type="date"
                 fullWidth
