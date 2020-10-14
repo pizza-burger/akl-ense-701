@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Grid, TextField, Typography } from "@material-ui/core"
+import { Button } from 'bootstrap'
 
 
 // searchfrom Component must take in a setter function as props =>
@@ -18,7 +19,7 @@ const SearchForm = (props) => {
 
         <Grid item xs={4}>
             <TextField
-                label="From date"
+                label="Froms date"
                 variant="outlined"
                 type="date"
                 fullWidth
@@ -35,8 +36,11 @@ const SearchForm = (props) => {
                 InputLabelProps={{ shrink: true }}
             />
         </Grid>
-        <Grid item xs ></Grid>
-
+        <Grid item xs >
+            <Button
+                label="test button"
+            />
+        </Grid>
     </Grid>
 }
 
