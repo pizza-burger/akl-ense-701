@@ -5,9 +5,9 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import SubmitStudy from "./pages/SubmitStudy.js";
-import Moderator from "./Moderator.js";
-import Searcher from "./Searcher.js";
+import SubmitStudy from "./pages/SubmitStudy.jsx";
+import Moderator from "./pages/Moderator.jsx";
+import Searcher from "./pages/Searcher.jsx";
 
 function Home() {
   return (
