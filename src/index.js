@@ -4,11 +4,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import homePage from '../.vscode/homePage'
+import homePage from './Home'
+import Home from './Home.js';
 
 ReactDOM.render(
   <React.StrictMode>
-    <moderatorPage />
+    <Home />
   </React.StrictMode>,
   document.getElementById('root')
 );
