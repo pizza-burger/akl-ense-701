@@ -41,7 +41,7 @@ const SearcherRoot = (props) => {
 
             <Grid item xs={12} style={{ bottom: "0", position: "absolute", textAlign: "center", width: "100%" }}>
                 <Typography variant="h5" >
-                    Every journey has an end, let's start another one
+                    modefied
             </Typography>
 
 

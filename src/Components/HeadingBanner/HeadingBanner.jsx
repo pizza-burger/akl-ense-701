@@ -65,7 +65,7 @@ const HeadingBanner = (props) => {
                     <Typography variant="h2" style={{ color: "#FFF", fontWeight: "bold" }}>Searcher</Typography>
 
                     <Grow in={lowerTextIn}>
-                        <Typography variant="h6" style={{ color: "#FFF" }}>Developed by Nick, Student Id: 17970654</Typography>
+                        <Typography variant="h6" style={{ color: "#FFF" }}>Hello</Typography>
                     </Grow>
 
 
