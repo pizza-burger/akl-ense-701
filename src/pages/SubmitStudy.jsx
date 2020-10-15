@@ -6,10 +6,16 @@ class SubmitStudy extends React.Component {
       <div className="SubmitStudy">
         <h1>Submit new Study</h1>
         <form>
-          <label for="title">Title: </label><br />
-          <input type="text" id="title" name="title"></input><br />
-          <label for="author">Author: </label><br />
-          <input type="text" id="author" name="author"></input>
+          <table>
+            <tr>
+              <td><label for="title">Title: </label></td>
+              <td><input type="text" id="title" name="title"></input></td>
+            </tr>
+            <tr>
+              <td><label for="author">Author: </label></td>
+              <td><input type="text" id="author" name="author"></input></td>
+            </tr>
+          </table>
         </form>
         <button type="submit">Submit</button>
       </div>
